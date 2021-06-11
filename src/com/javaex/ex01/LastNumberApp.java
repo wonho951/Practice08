@@ -1,5 +1,7 @@
 package com.javaex.ex01;
 
+import javax.xml.stream.events.EntityReference;
+
 public class LastNumberApp {
 
 	public static void main(String[] args) {
@@ -20,9 +22,14 @@ public class LastNumberApp {
 		int result;
 		
 		//아래부분을 try~catch문을 사용하여 수정하세요
-		result = intArray[3];
-		System.out.println(result);
+
 		
+		try {			
+			
+		} catch (ArrayIndexOutOfBoundsException e) {
+			result = intArray[3];
+			System.out.println("배열의 범위를 벗어났습니다.");
+		}
 	}
 
 }

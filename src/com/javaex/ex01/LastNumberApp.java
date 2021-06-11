@@ -24,10 +24,10 @@ public class LastNumberApp {
 		//아래부분을 try~catch문을 사용하여 수정하세요
 
 		
-		try {			
-			
-		} catch (ArrayIndexOutOfBoundsException e) {
-			result = intArray[3];
+		try {	//감시(예외발생 가능성 있는 코드 넣어줌)
+			result = intArray[3];	//배열중 3번방은 없음
+			System.out.println(result);	//result 출력
+		} catch (ArrayIndexOutOfBoundsException e) {	//예외발생해서 넘어오면 잡아냄
 			System.out.println("배열의 범위를 벗어났습니다.");
 		}
 	}

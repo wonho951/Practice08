@@ -13,11 +13,10 @@ public class CalcApp {
     	int setValue = sc.nextInt();
     	
     	
-    	if (setValue == a+b) {
-    		System.out.println("ej");
+    	if (setValue == a && setValue == b) {
+    		setValue = a+b;
+    		System.out.println();
     	}
-    	
-    	
     	
     	sc.close();
     	

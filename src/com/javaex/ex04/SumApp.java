@@ -20,7 +20,7 @@ public class SumApp {
 		
 	      for(int i=0; i< sArray.length; i++) {
 	    	  
-	          sum = sum + Integer.valueOf(sArray[i]);	// inter.valueof:  sum 값은 기존 sum값 + 
+	          sum = sum + Integer.valueOf(sArray[i]);	// inter.valueof: 문자를 숫자로 변환. sum 값은 기존 sum값 + int로 변환된 숫자값. 
 	          
 	       }
 		

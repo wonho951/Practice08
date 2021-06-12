@@ -15,7 +15,7 @@ public class CalcApp {
     	
     	if (setValue == a && setValue == b) {
     		setValue = a+b;
-    		System.out.println();
+    		System.out.println(setValue);
     	}
     	
     	sc.close();

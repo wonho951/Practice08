@@ -13,9 +13,16 @@ public class SumApp {
 
 		//코드를 작성하세요
 		
-		sum += Integer.parseInt(numLine);
 		
-		String [] sArray = numLine.split(" ");
+		
+		String [] sArray = numLine.split(" ");	//공백구분해야 하니 ""사이에 "  " 공백을 넣어줌	
+		
+		
+	      for(int i=0; i< sArray.length; i++) {
+	    	  
+	          sum = sum + Integer.valueOf(sArray[i]);	// inter.valueof:  sum 값은 기존 sum값 + 
+	          
+	       }
 		
 		
 		System.out.println("합:" + sum);

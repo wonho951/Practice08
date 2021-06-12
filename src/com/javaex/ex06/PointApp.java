@@ -13,7 +13,7 @@ public class PointApp {
 		System.out.println(p2 == p3);	//p2,p3의 주소값이 다름
 		System.out.println(p3 == p4);	//p3,p4의 주소값이 다름
 		System.out.println(p4 == p1);		//p4와 p1의 주소값이 같음
-		System.out.println(p1.equals(p2));	//p1,p2의 주소값이 다름
+		System.out.println(p1.equals(p2));	// 객체값이 같은데 왜..?
 		System.out.println(p4.equals(p1));	//p4와 p1의 주소값이 같음
 		
 		/*

@@ -13,10 +13,13 @@ public class Point {
 	//equals() 메소드를 작성하세요.
 
 	public boolean equals(Object obj) {
-		if (this.x == ((Point)obj).x && this.y == ((Point)obj).y) {
-			return true;
-		} else {
-			return false;
+		
+		Point p = ((Point)obj);
+		
+		if (this.x == p.x) {	//Point 클래스의 x의 값과 Object의 x값이 같다면
+			return true;	//true
+		} else {	//그렇지 않다면
+			return false;	//false
 
 		}
 	}

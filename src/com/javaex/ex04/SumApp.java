@@ -13,9 +13,10 @@ public class SumApp {
 
 		//코드를 작성하세요
 		
+		numLine.concat(numLine);
 		
 		
-		System.out.println("합:" + sum);
+			System.out.println("합:" + sum);
 		
 		sc.close();
 	}

@@ -13,7 +13,7 @@ public class SumApp {
 
 		//코드를 작성하세요
 		
-		Integer.parseInt(numLine);
+		sum += Integer.parseInt(numLine);
 		
 
 		

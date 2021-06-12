@@ -6,16 +6,17 @@ public class CalcApp {
 
     public static void main(String[] args) {
 
-    	int a= 0;
-    	int b= 0;
+    	
     	Scanner sc = new Scanner(System.in);
     	System.out.print(">>");
     	int setValue = sc.nextInt();
     	
+    	int a= setValue;
+    	int b= setValue;
     	
     	if (setValue == a && setValue == b) {
     		
-    		System.out.println();
+    		System.out.println(a + b);
     	}
     	
     	sc.close();

@@ -11,8 +11,18 @@ public class FriendApp {
 
         System.out.println("친구를 3명 등록해 주세요");
 
-        
+        //친구 1,2,3 정보입력
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         sc.close();
     }
 

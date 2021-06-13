@@ -16,13 +16,7 @@ public class FriendApp {
         	// 친구정보(이름,핸드폰,학교) 입력받기
         	
         	String name = sc.nextLine();  
-        	
-        	// 친구정보(핸드폰) 입력받기
-        	
         	String hp = sc.nextLine();
-        	
-        	// 친구정보(학교) 입력받기
-        	
         	String school = sc.nextLine();
         	
             // Friend 인스턴스 생성하여 데이터 넣기

@@ -9,11 +9,12 @@ public class CalcApp {
     	
     	Scanner sc = new Scanner(System.in);
     	  	
-    		
+    	int a = 0;
+    	int b = 0;
 		System.out.print(">>");
 		int num = sc.nextInt();
 
-    	if(split == "+") {
+    	if() {
     		
     	}
     		

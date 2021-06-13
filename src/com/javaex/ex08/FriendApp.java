@@ -14,17 +14,16 @@ public class FriendApp {
         //친구정보 3명 입력 로직 --> 반복문 사용
         for( int i = 0; i < friendArray.length; i++) {    
         	// 친구정보(이름,핸드폰,학교) 입력받기
-        	
-        	String name = sc.nextLine();  
-        	String hp = sc.nextLine();
-        	String school = sc.nextLine();
+        	String Info = sc.nextLine();
+        	String[] sArray = Info.split(" ");
+  
         	
             // Friend 인스턴스 생성하여 데이터 넣기
         	Friend info = new Friend();
         	
-        	info.setName(name);
-        	info.setHp(hp);
-        	info.setSchool(school);        	        	
+        	info.setName(sArray[0]);
+        	info.setHp(sArray[1]);
+        	info.setSchool(sArray[2]);        	        	
             // 인스턴스 주소를 배열에 대입
         	friendArray[i] = info;
         	

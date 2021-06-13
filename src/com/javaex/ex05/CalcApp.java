@@ -15,12 +15,31 @@ public class CalcApp {
 			System.out.print(">>"); // 반복시켜줌
 			
 			String cal = sc.nextLine();
+			
+			
+			
+			
+			
+			if (cal.equals("/q")) {
+				
+				System.out.println("종료합니다.");
+				break;
+			}
+			
+			
+			
+			
+			
+			
 			String[] cArray = cal.split(" ");
 			int a = Integer.parseInt(cArray[0]);	//a를 cArray의 0번방에 배치
 			int b = Integer.parseInt(cArray[2]);	//b를 cArray의 2번방에 배치
 			
+			
+			
+			
+			
 			try {
-				
 				if (cArray[1].equals("+")) { 
 					Add add = new Add();
 					add.setValue(a, b);
@@ -48,7 +67,7 @@ public class CalcApp {
 				} else {
 					System.out.println("알 수 없는 연산입니다.");
 				}
-
+				
 			} catch (NumberFormatException e) {
 				System.out.println("알 수 없는 연산입니다.");
 				
@@ -58,15 +77,7 @@ public class CalcApp {
 			} catch (ArrayIndexOutOfBoundsException e) {
 				System.out.println("알 수 없는 연산입니다.");
 				
-			}		
-			
-
-			if (cal == cArray[0]) {
-				cArray[0] = "/q";
-				System.out.println("종료합니다.");
-				break;
-			}
-
+			}	
 				
 			
 				

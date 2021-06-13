@@ -17,8 +17,7 @@ public class CalcApp {
 			String cal = sc.nextLine();
 
 			
-			if (cal.equals("/q")) {	//배열 잡아주고 int a 안에 자꾸 /q를 넣으려고 하니 오류났음.
-				
+			if (cal.equals("/q")) {	//배열 잡아주고 int a 안에 자꾸 /q를 넣으려고 하니 오류났음.				
 				System.out.println("종료합니다.");
 				break;
 			}
@@ -29,7 +28,7 @@ public class CalcApp {
 			int b = Integer.parseInt(cArray[2]);	//b를 cArray의 2번방에 배치
 
 			
-			try {
+			try {	// 오류가 발생하냐를 감시하는 영역 --> 최소한으로 코딩할것.
 				if (cArray[1].equals("+")) { 
 					Add add = new Add();
 					add.setValue(a, b);
@@ -58,7 +57,7 @@ public class CalcApp {
 					System.out.println("알 수 없는 연산입니다.");
 				}
 				
-			} catch (NumberFormatException e) {
+			} catch (NumberFormatException e) { //오류잡아내는 영역
 				System.out.println("알 수 없는 연산입니다.");
 				
 			} catch (ArithmeticException e) {

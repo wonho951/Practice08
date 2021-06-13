@@ -11,13 +11,9 @@ public class CalcApp {
     	System.out.print(">>");
     	int setValue = sc.nextInt();
     	
-    	int a= setValue;
-    	int b= setValue;
     	
-    	if (setValue == a && setValue == b) {
-    		
-    		System.out.println(a + b);
-    	}
+    	
+ 
     	
     	sc.close();
     	

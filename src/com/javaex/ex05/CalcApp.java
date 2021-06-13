@@ -8,9 +8,17 @@ public class CalcApp {
 
     	
     	Scanner sc = new Scanner(System.in);
-    	System.out.print(">>");
-    	int setValue = sc.nextInt();
-    	
+    	  	
+    		
+		System.out.print(">>");
+		int num = sc.nextInt();
+
+    	if(split == "+") {
+    		
+    	}
+    		
+    		
+    
     	
     	
  

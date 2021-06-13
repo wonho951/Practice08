@@ -15,29 +15,19 @@ public class CalcApp {
 			System.out.print(">>"); // 반복시켜줌
 			
 			String cal = sc.nextLine();
+
 			
-			
-			
-			
-			
-			if (cal.equals("/q")) {
+			if (cal.equals("/q")) {	//배열 잡아주고 int a 안에 자꾸 /q를 넣으려고 하니 오류났음.
 				
 				System.out.println("종료합니다.");
 				break;
 			}
-			
-			
-			
-			
-			
+
 			
 			String[] cArray = cal.split(" ");
-			int a = Integer.parseInt(cArray[0]);	//a를 cArray의 0번방에 배치
+			int a = Integer.parseInt(cArray[0]);	//a를 cArray의 0번방에 배치 
 			int b = Integer.parseInt(cArray[2]);	//b를 cArray의 2번방에 배치
-			
-			
-			
-			
+
 			
 			try {
 				if (cArray[1].equals("+")) { 
@@ -81,10 +71,10 @@ public class CalcApp {
 				
 			
 				
-    	}
+    	
 	
     		
-    
+    	}
     	
     	
  

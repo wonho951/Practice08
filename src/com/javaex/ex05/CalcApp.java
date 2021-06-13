@@ -42,26 +42,26 @@ public class CalcApp {
 				div.setValue(a, b);
 				System.out.println(">>" + div.calculate());
 									
+			} else if (cArray[0].equals("/q")) {
+				System.out.println("종료됩니다.");
+				break;
 			} else {
 				System.out.println("알 수 없는 연산입니다.");
-				
 			}
 			
-			
-			
+			/*
 			try {
-				if (cArray[1].equals("/q")) {
-					System.out.println("종료합니다.");
-				}
-			} catch (Exception e) {
+				cArray.equals("/q");
+			} catch (NumberFormatException e) {
 				System.out.println("종료합니다.");
 				break;
-			}
+			}	
+			*/
 				
 			
 				
     	}
-    	    		
+	
     		
     
     	

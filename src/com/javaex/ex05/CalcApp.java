@@ -11,6 +11,7 @@ public class CalcApp {
     	  	
 
     	while (true) {
+    		
 			System.out.print(">>"); // 반복시켜줌
 			
 			String cal = sc.nextLine();
@@ -42,22 +43,30 @@ public class CalcApp {
 					Div div = new Div();
 					div.setValue(a, b);
 					System.out.println(">>" + div.calculate());
-										
+					continue;
+					
 				} else {
 					System.out.println("알 수 없는 연산입니다.");
 				}
 
 			} catch (NumberFormatException e) {
-				System.out.println("종료합니다.");
-				break;
+				System.out.println("알 수 없는 연산입니다.");
+				
 			} catch (ArithmeticException e) {
-				System.out.println("종료합니다.");
-				break;
+				System.out.println("알 수 없는 연산입니다.");
+				
 			} catch (ArrayIndexOutOfBoundsException e) {
-				System.out.println("종료합니다.");
-				break;
+				System.out.println("알 수 없는 연산입니다.");
+				
 			}		
 			
+
+			if (cal == cArray[0]) {
+				cArray[0] = "/q";
+				System.out.println("종료합니다.");
+				break;
+			}
+
 				
 			
 				

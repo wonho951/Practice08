@@ -49,14 +49,14 @@ public class CalcApp {
 				System.out.println("알 수 없는 연산입니다.");
 			}
 			
-			/*
+			
 			try {
-				cArray.equals("/q");
+				cArray[0].equals("/q");
 			} catch (NumberFormatException e) {
 				System.out.println("종료합니다.");
 				break;
 			}	
-			*/
+			
 				
 			
 				

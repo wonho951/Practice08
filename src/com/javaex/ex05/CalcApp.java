@@ -18,44 +18,45 @@ public class CalcApp {
 			int a = Integer.parseInt(cArray[0]);	//a를 cArray의 0번방에 배치
 			int b = Integer.parseInt(cArray[2]);	//b를 cArray의 2번방에 배치
 			
-			
-			if (cArray[1].equals("+")) { 
-				Add add = new Add();
-				add.setValue(a, b);
-				System.out.println(">>" + add.calculate());
-				
-				continue;
-			} else if (cArray[1].equals("-")) { 
-				Sub sub = new Sub();
-				sub.setValue(a, b);
-				System.out.println(">>" + sub.calculate());
-				
-				continue;
-			} else if (cArray[1].equals("*")) { 
-				Mul mul = new Mul();
-				mul.setValue(a, b);
-				System.out.println(">>" + mul.calculate());
-				continue;
-				
-			} else if (cArray[1].equals("/")) { 
-				Div div = new Div();
-				div.setValue(a, b);
-				System.out.println(">>" + div.calculate());
-									
-			} else if (cArray[0].equals("/q")) {
-				System.out.println("종료됩니다.");
-				break;
-			} else {
-				System.out.println("알 수 없는 연산입니다.");
-			}
-			
-			
 			try {
-				cArray[0].equals("/q");
+				
+				if (cArray[1].equals("+")) { 
+					Add add = new Add();
+					add.setValue(a, b);
+					System.out.println(">>" + add.calculate());
+					
+					continue;
+				} else if (cArray[1].equals("-")) { 
+					Sub sub = new Sub();
+					sub.setValue(a, b);
+					System.out.println(">>" + sub.calculate());
+					
+					continue;
+				} else if (cArray[1].equals("*")) { 
+					Mul mul = new Mul();
+					mul.setValue(a, b);
+					System.out.println(">>" + mul.calculate());
+					continue;
+					
+				} else if (cArray[1].equals("/")) { 
+					Div div = new Div();
+					div.setValue(a, b);
+					System.out.println(">>" + div.calculate());
+										
+				} else {
+					System.out.println("알 수 없는 연산입니다.");
+				}
+
 			} catch (NumberFormatException e) {
 				System.out.println("종료합니다.");
 				break;
-			}	
+			} catch (ArithmeticException e) {
+				System.out.println("종료합니다.");
+				break;
+			} catch (ArrayIndexOutOfBoundsException e) {
+				System.out.println("종료합니다.");
+				break;
+			}		
 			
 				
 			
